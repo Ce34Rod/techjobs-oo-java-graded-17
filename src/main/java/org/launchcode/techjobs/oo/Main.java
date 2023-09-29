@@ -14,6 +14,16 @@ public class Main {
 //        for (Job job : jobs){
 //            System.out.println(job);
 //        }
+        Employer apple = new Employer("Apple");
+       CoreCompetency persistence = new CoreCompetency("Persistence");
+       Location seattle = new Location("Seattle");
+
+       PositionType qualityControl = new PositionType("Quality Control");
+
+       Job job123 = new Job("Product tester", apple, seattle, qualityControl, persistence);
+        String employerValue = apple.getValue();
+        System.out.println(employerValue);
     }
+
 
 }
