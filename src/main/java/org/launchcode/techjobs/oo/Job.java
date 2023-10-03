@@ -28,13 +28,16 @@ public class Job {
     }
 
     @Override
-    public boolean equals(Object o) {  // Two objects are equal if they have the same id.
-       if
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Job job = (Job) o;
+        return id == job.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId());
+        return Objects.hash(id);
     }
 
     public int getId() {

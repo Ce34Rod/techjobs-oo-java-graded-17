@@ -34,7 +34,7 @@ public class Main {
             System.out.println("it didn't work");
         }
         System.out.println(job.getCoreCompetency());
-        System.out.println();
+        System.out.println(job.equals(job123));
         }
     }
 
