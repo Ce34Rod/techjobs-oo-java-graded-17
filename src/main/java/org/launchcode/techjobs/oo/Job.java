@@ -29,10 +29,7 @@ public class Job {
 
     @Override
     public boolean equals(Object o) {  // Two objects are equal if they have the same id.
-        if (this == o) return true;
-        if (!(o instanceof Job)) return false;
-        Job job = (Job) o;
-        return getId() == job.getId(); //returns true or false
+       if
     }
 
     @Override
@@ -48,20 +45,21 @@ public class Job {
         return name;
     }
 
-    public String getEmployer() {
-        return employer.getValue();
+    public Employer getEmployer() {
+        return employer;
     }
 
-    public String getLocation() {
-        return location.getValue();
+    public Location getLocation() {
+        return location;
     }
 
-    public String getPositionType() {
-        return positionType.getValue();
+    public PositionType getPositionType() {
+        return positionType;
     }
 
-    public String getCoreCompetency() {
-        return coreCompetency.getValue();
+    public CoreCompetency getCoreCompetency() {
+
+        return coreCompetency;
     }
 
     public void setName(String value) {

@@ -22,8 +22,21 @@ public class Main {
 
        Job job123 = new Job("Product tester", apple, seattle, qualityControl, persistence);
         String employerValue = apple.getValue();
-        System.out.println(employerValue);
+        System.out.println(job123.getEmployer());
+        Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
+                new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String y = job.getCoreCompetency().getValue();
+        System.out.println(y);
+        CoreCompetency x = job.getCoreCompetency();
+        if (x instanceof CoreCompetency) {
+            System.out.println("The class setter works.");
+        } else {
+            System.out.println("it didn't work");
+        }
+        System.out.println(job.getCoreCompetency());
+        System.out.println();
+        }
     }
 
 
-}
+
