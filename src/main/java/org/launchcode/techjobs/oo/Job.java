@@ -30,22 +30,22 @@ public class Job{
     public String toString(){
         String W = System.lineSeparator();
         if (name.isEmpty()) {
-            this.name = " Data not available";
+            this.name = "Data not available";
         }
         if (this.employer.getValue().isEmpty()) {
-            this.employer.setValue(" Data not available");
+            this.employer.setValue("Data not available");
         }
         if (this.location.getValue().isEmpty()) {
-            this.location.setValue(" Data not available");
+            this.location.setValue("Data not available");
         }
         if (this.positionType.getValue().isEmpty()) {
-            this.positionType.setValue(" Data not available");
+            this.positionType.setValue("Data not available");
         }
         if (this.coreCompetency.getValue().isEmpty()) {
-            this.coreCompetency.setValue(" Data not available");
+            this.coreCompetency.setValue("Data not available");
         }
 
-        return W + "ID: "+id + W + "Name:"+name + W + "Employer:"+this.employer + W + "Location:" +location + W + "Position Type:"+positionType + W + "Core Competency:"+coreCompetency + W;
+        return W + "ID: "+id + W + "Name: "+name + W + "Employer: "+this.employer + W + "Location: " +location + W + "Position Type: "+positionType + W + "Core Competency: "+coreCompetency + W;
     }
 
     @Override

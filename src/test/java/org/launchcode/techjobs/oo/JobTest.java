@@ -53,7 +53,7 @@ assertTrue(job.toString().startsWith(W) && job.toString().endsWith(W));
     Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
             new PositionType("Quality control"), new CoreCompetency("Persistence"));
     String W = System.lineSeparator();
-assertEquals(W + "ID: "+job.getId() + W + "Name:"+job.getName() + W + "Employer:"+job.getEmployer() + W + "Location:" +job.getLocation() + W + "Position Type:"+job.getPositionType() + W + "Core Competency:"+job.getCoreCompetency() + W, job.toString());
+assertEquals(W + "ID: "+job.getId() + W + "Name: "+job.getName() + W + "Employer: "+job.getEmployer() + W + "Location: " +job.getLocation() + W + "Position Type: "+job.getPositionType() + W + "Core Competency: "+job.getCoreCompetency() + W, job.toString());
 }
 @Test
     public void testToStringHandlesEmptyField(){

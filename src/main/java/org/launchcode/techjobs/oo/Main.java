@@ -34,6 +34,8 @@ public class Main {
             System.out.println("it didn't work");
         }
         System.out.println(job.toString());
+        Employer hut = new Employer("The Hut");
+        System.out.println(hut);
     }
 }
 
