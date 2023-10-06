@@ -2,7 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class Job {
+public class Job{
 
     private int id;
     private static int nextId = 1;
@@ -25,6 +25,27 @@ public class Job {
         this.coreCompetency= coreCompetency;
 
 
+    }
+    @Override
+    public String toString(){
+        String W = System.lineSeparator();
+        if (name.isEmpty()) {
+            this.name = " Data not available";
+        }
+        if (this.employer.getValue().isEmpty()) {
+            this.employer.setValue(" Data not available");
+        }
+        if (this.location.getValue().isEmpty()) {
+            this.location.setValue(" Data not available");
+        }
+        if (this.positionType.getValue().isEmpty()) {
+            this.positionType.setValue(" Data not available");
+        }
+        if (this.coreCompetency.getValue().isEmpty()) {
+            this.coreCompetency.setValue(" Data not available");
+        }
+
+        return W + "ID: "+id + W + "Name:"+name + W + "Employer:"+this.employer + W + "Location:" +location + W + "Position Type:"+positionType + W + "Core Competency:"+coreCompetency + W;
     }
 
     @Override

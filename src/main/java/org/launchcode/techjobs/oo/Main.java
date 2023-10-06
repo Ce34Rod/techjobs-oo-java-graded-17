@@ -15,15 +15,15 @@ public class Main {
 //            System.out.println(job);
 //        }
         Employer apple = new Employer("Apple");
-       CoreCompetency persistence = new CoreCompetency("Persistence");
-       Location seattle = new Location("Seattle");
+        CoreCompetency persistence = new CoreCompetency("Persistence");
+        Location seattle = new Location("Seattle");
 
-       PositionType qualityControl = new PositionType("Quality Control");
+        PositionType qualityControl = new PositionType("Quality Control");
 
-       Job job123 = new Job("Product tester", apple, seattle, qualityControl, persistence);
+        Job job123 = new Job("Product tester", apple, seattle, qualityControl, persistence);
         String employerValue = apple.getValue();
         System.out.println(job123.getEmployer());
-        Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
+        Job job = new Job("Product tester", new Employer(""), new Location(""),
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String y = job.getCoreCompetency().getValue();
         System.out.println(y);
@@ -33,10 +33,9 @@ public class Main {
         } else {
             System.out.println("it didn't work");
         }
-        System.out.println(job.getCoreCompetency());
-        System.out.println(job.equals(job123));
-        }
+        System.out.println(job.toString());
     }
+}
 
 
 
